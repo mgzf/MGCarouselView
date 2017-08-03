@@ -1,0 +1,760 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		534A0CE1FB7D61C816110F41 /* Pods_MGCarouselView_DemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6D087E453691250B9A75003 /* Pods_MGCarouselView_DemoUITests.framework */; };
+		5B9F8DCDBB19E424680064D4 /* Pods_MGCarouselView_DemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB96BDE35A1B65A14102A5C8 /* Pods_MGCarouselView_DemoTests.framework */; };
+		A827870FA1306C573F95A0A3 /* Pods_MGCarouselView_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DF3AC372C0EF2AAB0C3A6A0 /* Pods_MGCarouselView_Demo.framework */; };
+		E439031F1F31BA7B00FC68D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E439031E1F31BA7B00FC68D6 /* AppDelegate.swift */; };
+		E43903211F31BA7B00FC68D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43903201F31BA7B00FC68D6 /* ViewController.swift */; };
+		E43903241F31BA7B00FC68D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E43903221F31BA7B00FC68D6 /* Main.storyboard */; };
+		E43903261F31BA7B00FC68D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E43903251F31BA7B00FC68D6 /* Assets.xcassets */; };
+		E43903291F31BA7B00FC68D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E43903271F31BA7B00FC68D6 /* LaunchScreen.storyboard */; };
+		E43903341F31BA7B00FC68D6 /* MGCarouselView_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43903331F31BA7B00FC68D6 /* MGCarouselView_DemoTests.swift */; };
+		E439033F1F31BA7B00FC68D6 /* MGCarouselView_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E439033E1F31BA7B00FC68D6 /* MGCarouselView_DemoUITests.swift */; };
+		E43903591F32D05500FC68D6 /* MGCarouselContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43903571F32D05500FC68D6 /* MGCarouselContentView.swift */; };
+		E439035A1F32D05500FC68D6 /* MGCarouselContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E43903581F32D05500FC68D6 /* MGCarouselContentView.xib */; };
+		E439035E1F32EEFF00FC68D6 /* MGCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E439035C1F32EEFF00FC68D6 /* MGCarouselView.swift */; };
+		E439035F1F32EEFF00FC68D6 /* MGCarouselViewPeriferal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E439035D1F32EEFF00FC68D6 /* MGCarouselViewPeriferal.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E43903301F31BA7B00FC68D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E43903131F31BA7B00FC68D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E439031A1F31BA7B00FC68D6;
+			remoteInfo = "MGCarouselView-Demo";
+		};
+		E439033B1F31BA7B00FC68D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E43903131F31BA7B00FC68D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E439031A1F31BA7B00FC68D6;
+			remoteInfo = "MGCarouselView-Demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		000EB37DD6D90A04B1FD3BA2 /* Pods-MGCarouselView-DemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGCarouselView-DemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MGCarouselView-DemoTests/Pods-MGCarouselView-DemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2DF3AC372C0EF2AAB0C3A6A0 /* Pods_MGCarouselView_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MGCarouselView_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EBAC3D7B78DD0B2F5E15695 /* Pods-MGCarouselView-DemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGCarouselView-DemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MGCarouselView-DemoUITests/Pods-MGCarouselView-DemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		65EC6AFC012DC0E077057CDE /* Pods-MGCarouselView-DemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGCarouselView-DemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MGCarouselView-DemoUITests/Pods-MGCarouselView-DemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		88CB8998F95A69467E9C1EE5 /* Pods-MGCarouselView-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGCarouselView-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MGCarouselView-Demo/Pods-MGCarouselView-Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		AFE3CB09C87919753A3238C8 /* Pods-MGCarouselView-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGCarouselView-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MGCarouselView-Demo/Pods-MGCarouselView-Demo.release.xcconfig"; sourceTree = "<group>"; };
+		BD262E3DACE17B2B5537A8BB /* Pods-MGCarouselView-DemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGCarouselView-DemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MGCarouselView-DemoTests/Pods-MGCarouselView-DemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		CB96BDE35A1B65A14102A5C8 /* Pods_MGCarouselView_DemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MGCarouselView_DemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E439031B1F31BA7B00FC68D6 /* MGCarouselView-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MGCarouselView-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E439031E1F31BA7B00FC68D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E43903201F31BA7B00FC68D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E43903231F31BA7B00FC68D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E43903251F31BA7B00FC68D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E43903281F31BA7B00FC68D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E439032A1F31BA7B00FC68D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E439032F1F31BA7B00FC68D6 /* MGCarouselView-DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MGCarouselView-DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E43903331F31BA7B00FC68D6 /* MGCarouselView_DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGCarouselView_DemoTests.swift; sourceTree = "<group>"; };
+		E43903351F31BA7B00FC68D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E439033A1F31BA7B00FC68D6 /* MGCarouselView-DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MGCarouselView-DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E439033E1F31BA7B00FC68D6 /* MGCarouselView_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGCarouselView_DemoUITests.swift; sourceTree = "<group>"; };
+		E43903401F31BA7B00FC68D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E43903571F32D05500FC68D6 /* MGCarouselContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MGCarouselContentView.swift; sourceTree = "<group>"; };
+		E43903581F32D05500FC68D6 /* MGCarouselContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MGCarouselContentView.xib; sourceTree = "<group>"; };
+		E439035C1F32EEFF00FC68D6 /* MGCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MGCarouselView.swift; sourceTree = "<group>"; };
+		E439035D1F32EEFF00FC68D6 /* MGCarouselViewPeriferal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MGCarouselViewPeriferal.swift; sourceTree = "<group>"; };
+		E6D087E453691250B9A75003 /* Pods_MGCarouselView_DemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MGCarouselView_DemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E43903181F31BA7B00FC68D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A827870FA1306C573F95A0A3 /* Pods_MGCarouselView_Demo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E439032C1F31BA7B00FC68D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B9F8DCDBB19E424680064D4 /* Pods_MGCarouselView_DemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E43903371F31BA7B00FC68D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				534A0CE1FB7D61C816110F41 /* Pods_MGCarouselView_DemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46F8B671E20C1786AAD67899 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2DF3AC372C0EF2AAB0C3A6A0 /* Pods_MGCarouselView_Demo.framework */,
+				CB96BDE35A1B65A14102A5C8 /* Pods_MGCarouselView_DemoTests.framework */,
+				E6D087E453691250B9A75003 /* Pods_MGCarouselView_DemoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95B8091AD11C0119DD2CAC68 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				88CB8998F95A69467E9C1EE5 /* Pods-MGCarouselView-Demo.debug.xcconfig */,
+				AFE3CB09C87919753A3238C8 /* Pods-MGCarouselView-Demo.release.xcconfig */,
+				000EB37DD6D90A04B1FD3BA2 /* Pods-MGCarouselView-DemoTests.debug.xcconfig */,
+				BD262E3DACE17B2B5537A8BB /* Pods-MGCarouselView-DemoTests.release.xcconfig */,
+				3EBAC3D7B78DD0B2F5E15695 /* Pods-MGCarouselView-DemoUITests.debug.xcconfig */,
+				65EC6AFC012DC0E077057CDE /* Pods-MGCarouselView-DemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E43903121F31BA7B00FC68D6 = {
+			isa = PBXGroup;
+			children = (
+				E439035B1F32EEFF00FC68D6 /* Sources */,
+				E439031D1F31BA7B00FC68D6 /* MGCarouselView-Demo */,
+				E43903321F31BA7B00FC68D6 /* MGCarouselView-DemoTests */,
+				E439033D1F31BA7B00FC68D6 /* MGCarouselView-DemoUITests */,
+				E439031C1F31BA7B00FC68D6 /* Products */,
+				95B8091AD11C0119DD2CAC68 /* Pods */,
+				46F8B671E20C1786AAD67899 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E439031C1F31BA7B00FC68D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E439031B1F31BA7B00FC68D6 /* MGCarouselView-Demo.app */,
+				E439032F1F31BA7B00FC68D6 /* MGCarouselView-DemoTests.xctest */,
+				E439033A1F31BA7B00FC68D6 /* MGCarouselView-DemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E439031D1F31BA7B00FC68D6 /* MGCarouselView-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				E43903571F32D05500FC68D6 /* MGCarouselContentView.swift */,
+				E43903581F32D05500FC68D6 /* MGCarouselContentView.xib */,
+				E439031E1F31BA7B00FC68D6 /* AppDelegate.swift */,
+				E43903201F31BA7B00FC68D6 /* ViewController.swift */,
+				E43903221F31BA7B00FC68D6 /* Main.storyboard */,
+				E43903251F31BA7B00FC68D6 /* Assets.xcassets */,
+				E43903271F31BA7B00FC68D6 /* LaunchScreen.storyboard */,
+				E439032A1F31BA7B00FC68D6 /* Info.plist */,
+			);
+			path = "MGCarouselView-Demo";
+			sourceTree = "<group>";
+		};
+		E43903321F31BA7B00FC68D6 /* MGCarouselView-DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				E43903331F31BA7B00FC68D6 /* MGCarouselView_DemoTests.swift */,
+				E43903351F31BA7B00FC68D6 /* Info.plist */,
+			);
+			path = "MGCarouselView-DemoTests";
+			sourceTree = "<group>";
+		};
+		E439033D1F31BA7B00FC68D6 /* MGCarouselView-DemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E439033E1F31BA7B00FC68D6 /* MGCarouselView_DemoUITests.swift */,
+				E43903401F31BA7B00FC68D6 /* Info.plist */,
+			);
+			path = "MGCarouselView-DemoUITests";
+			sourceTree = "<group>";
+		};
+		E439035B1F32EEFF00FC68D6 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E439035C1F32EEFF00FC68D6 /* MGCarouselView.swift */,
+				E439035D1F32EEFF00FC68D6 /* MGCarouselViewPeriferal.swift */,
+			);
+			name = Sources;
+			path = ../Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E439031A1F31BA7B00FC68D6 /* MGCarouselView-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E43903431F31BA7B00FC68D6 /* Build configuration list for PBXNativeTarget "MGCarouselView-Demo" */;
+			buildPhases = (
+				2709D30E90B3BC8CB27577CE /* [CP] Check Pods Manifest.lock */,
+				E43903171F31BA7B00FC68D6 /* Sources */,
+				E43903181F31BA7B00FC68D6 /* Frameworks */,
+				E43903191F31BA7B00FC68D6 /* Resources */,
+				F5B9C8D38AE469D7FF10F963 /* [CP] Embed Pods Frameworks */,
+				AC7C9CDADC25988BC6B37CD3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MGCarouselView-Demo";
+			productName = "MGCarouselView-Demo";
+			productReference = E439031B1F31BA7B00FC68D6 /* MGCarouselView-Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E439032E1F31BA7B00FC68D6 /* MGCarouselView-DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E43903461F31BA7B00FC68D6 /* Build configuration list for PBXNativeTarget "MGCarouselView-DemoTests" */;
+			buildPhases = (
+				8594B0456A3F2C451C99FFA6 /* [CP] Check Pods Manifest.lock */,
+				E439032B1F31BA7B00FC68D6 /* Sources */,
+				E439032C1F31BA7B00FC68D6 /* Frameworks */,
+				E439032D1F31BA7B00FC68D6 /* Resources */,
+				3E93EE13EB29D41388B4B713 /* [CP] Embed Pods Frameworks */,
+				3A1D2DA57DBC829BE75A0BA7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E43903311F31BA7B00FC68D6 /* PBXTargetDependency */,
+			);
+			name = "MGCarouselView-DemoTests";
+			productName = "MGCarouselView-DemoTests";
+			productReference = E439032F1F31BA7B00FC68D6 /* MGCarouselView-DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E43903391F31BA7B00FC68D6 /* MGCarouselView-DemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E43903491F31BA7B00FC68D6 /* Build configuration list for PBXNativeTarget "MGCarouselView-DemoUITests" */;
+			buildPhases = (
+				FA4F00E97ABCE439D3E6C69F /* [CP] Check Pods Manifest.lock */,
+				E43903361F31BA7B00FC68D6 /* Sources */,
+				E43903371F31BA7B00FC68D6 /* Frameworks */,
+				E43903381F31BA7B00FC68D6 /* Resources */,
+				356A38047230C6EA56EA8850 /* [CP] Embed Pods Frameworks */,
+				DCDD2CA6240D64F55F9EBC29 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E439033C1F31BA7B00FC68D6 /* PBXTargetDependency */,
+			);
+			name = "MGCarouselView-DemoUITests";
+			productName = "MGCarouselView-DemoUITests";
+			productReference = E439033A1F31BA7B00FC68D6 /* MGCarouselView-DemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E43903131F31BA7B00FC68D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = song;
+				TargetAttributes = {
+					E439031A1F31BA7B00FC68D6 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = QJWKFR3L8K;
+						ProvisioningStyle = Automatic;
+					};
+					E439032E1F31BA7B00FC68D6 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = QJWKFR3L8K;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E439031A1F31BA7B00FC68D6;
+					};
+					E43903391F31BA7B00FC68D6 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = QJWKFR3L8K;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E439031A1F31BA7B00FC68D6;
+					};
+				};
+			};
+			buildConfigurationList = E43903161F31BA7B00FC68D6 /* Build configuration list for PBXProject "MGCarouselView-Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E43903121F31BA7B00FC68D6;
+			productRefGroup = E439031C1F31BA7B00FC68D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E439031A1F31BA7B00FC68D6 /* MGCarouselView-Demo */,
+				E439032E1F31BA7B00FC68D6 /* MGCarouselView-DemoTests */,
+				E43903391F31BA7B00FC68D6 /* MGCarouselView-DemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E43903191F31BA7B00FC68D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E43903291F31BA7B00FC68D6 /* LaunchScreen.storyboard in Resources */,
+				E43903261F31BA7B00FC68D6 /* Assets.xcassets in Resources */,
+				E439035A1F32D05500FC68D6 /* MGCarouselContentView.xib in Resources */,
+				E43903241F31BA7B00FC68D6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E439032D1F31BA7B00FC68D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E43903381F31BA7B00FC68D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2709D30E90B3BC8CB27577CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		356A38047230C6EA56EA8850 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MGCarouselView-DemoUITests/Pods-MGCarouselView-DemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A1D2DA57DBC829BE75A0BA7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MGCarouselView-DemoTests/Pods-MGCarouselView-DemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E93EE13EB29D41388B4B713 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MGCarouselView-DemoTests/Pods-MGCarouselView-DemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8594B0456A3F2C451C99FFA6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AC7C9CDADC25988BC6B37CD3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MGCarouselView-Demo/Pods-MGCarouselView-Demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCDD2CA6240D64F55F9EBC29 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MGCarouselView-DemoUITests/Pods-MGCarouselView-DemoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5B9C8D38AE469D7FF10F963 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MGCarouselView-Demo/Pods-MGCarouselView-Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA4F00E97ABCE439D3E6C69F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E43903171F31BA7B00FC68D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E439035E1F32EEFF00FC68D6 /* MGCarouselView.swift in Sources */,
+				E43903211F31BA7B00FC68D6 /* ViewController.swift in Sources */,
+				E439031F1F31BA7B00FC68D6 /* AppDelegate.swift in Sources */,
+				E43903591F32D05500FC68D6 /* MGCarouselContentView.swift in Sources */,
+				E439035F1F32EEFF00FC68D6 /* MGCarouselViewPeriferal.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E439032B1F31BA7B00FC68D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E43903341F31BA7B00FC68D6 /* MGCarouselView_DemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E43903361F31BA7B00FC68D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E439033F1F31BA7B00FC68D6 /* MGCarouselView_DemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E43903311F31BA7B00FC68D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E439031A1F31BA7B00FC68D6 /* MGCarouselView-Demo */;
+			targetProxy = E43903301F31BA7B00FC68D6 /* PBXContainerItemProxy */;
+		};
+		E439033C1F31BA7B00FC68D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E439031A1F31BA7B00FC68D6 /* MGCarouselView-Demo */;
+			targetProxy = E439033B1F31BA7B00FC68D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E43903221F31BA7B00FC68D6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E43903231F31BA7B00FC68D6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E43903271F31BA7B00FC68D6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E43903281F31BA7B00FC68D6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E43903411F31BA7B00FC68D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E43903421F31BA7B00FC68D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E43903441F31BA7B00FC68D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88CB8998F95A69467E9C1EE5 /* Pods-MGCarouselView-Demo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QJWKFR3L8K;
+				INFOPLIST_FILE = "MGCarouselView-Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Texy.MGCarouselView-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E43903451F31BA7B00FC68D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFE3CB09C87919753A3238C8 /* Pods-MGCarouselView-Demo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QJWKFR3L8K;
+				INFOPLIST_FILE = "MGCarouselView-Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Texy.MGCarouselView-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		E43903471F31BA7B00FC68D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 000EB37DD6D90A04B1FD3BA2 /* Pods-MGCarouselView-DemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = QJWKFR3L8K;
+				INFOPLIST_FILE = "MGCarouselView-DemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Texy.MGCarouselView-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MGCarouselView-Demo.app/MGCarouselView-Demo";
+			};
+			name = Debug;
+		};
+		E43903481F31BA7B00FC68D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD262E3DACE17B2B5537A8BB /* Pods-MGCarouselView-DemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = QJWKFR3L8K;
+				INFOPLIST_FILE = "MGCarouselView-DemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Texy.MGCarouselView-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MGCarouselView-Demo.app/MGCarouselView-Demo";
+			};
+			name = Release;
+		};
+		E439034A1F31BA7B00FC68D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EBAC3D7B78DD0B2F5E15695 /* Pods-MGCarouselView-DemoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = QJWKFR3L8K;
+				INFOPLIST_FILE = "MGCarouselView-DemoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Texy.MGCarouselView-DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "MGCarouselView-Demo";
+			};
+			name = Debug;
+		};
+		E439034B1F31BA7B00FC68D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65EC6AFC012DC0E077057CDE /* Pods-MGCarouselView-DemoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = QJWKFR3L8K;
+				INFOPLIST_FILE = "MGCarouselView-DemoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Texy.MGCarouselView-DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "MGCarouselView-Demo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E43903161F31BA7B00FC68D6 /* Build configuration list for PBXProject "MGCarouselView-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E43903411F31BA7B00FC68D6 /* Debug */,
+				E43903421F31BA7B00FC68D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E43903431F31BA7B00FC68D6 /* Build configuration list for PBXNativeTarget "MGCarouselView-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E43903441F31BA7B00FC68D6 /* Debug */,
+				E43903451F31BA7B00FC68D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E43903461F31BA7B00FC68D6 /* Build configuration list for PBXNativeTarget "MGCarouselView-DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E43903471F31BA7B00FC68D6 /* Debug */,
+				E43903481F31BA7B00FC68D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E43903491F31BA7B00FC68D6 /* Build configuration list for PBXNativeTarget "MGCarouselView-DemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E439034A1F31BA7B00FC68D6 /* Debug */,
+				E439034B1F31BA7B00FC68D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E43903131F31BA7B00FC68D6 /* Project object */;
+}
