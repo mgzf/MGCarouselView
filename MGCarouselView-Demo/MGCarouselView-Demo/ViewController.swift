@@ -18,6 +18,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        carouselView.page.isHidden = true
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 

@@ -43,6 +43,21 @@ open class MGCarouselView: UIView,MGTimerFetching {
         }
     }
     
+    /*! 底部阴影高度 */
+    @IBInspectable public var shadeHeight: CGFloat = 0{
+        didSet{
+            self.setNeedsLayout()
+            self.bottomBgImageView.isHidden = shadeHeight == 0
+        }
+    }
+    
+    /*! 底部阴影图片 */
+    @IBInspectable public var shadeImage: UIImage?{
+        didSet{
+            self.bottomBgImageView.image = shadeImage
+        }
+    }
+    
     /*! MGCarouselViewDelegate  */
     public weak var delegate : MGCarouselViewDelegate?{
         didSet{
@@ -78,6 +93,12 @@ open class MGCarouselView: UIView,MGTimerFetching {
         return carousel
     }()
     
+    fileprivate lazy var bottomBgImageView: UIImageView = {
+        let imageView: UIImageView = UIImageView()
+        imageView.isUserInteractionEnabled = false
+        return imageView
+    }()
+    
     fileprivate var carouseData:[Any] = []
     
     override init(frame: CGRect) {
@@ -97,6 +118,7 @@ open class MGCarouselView: UIView,MGTimerFetching {
         page.frame = CGRect(x: 0, y: 0, width: bounds.width, height: 30)
         let pageCenterY = bounds.maxY*9.0/10.0 < 15 ? 15 : bounds.maxY*9.0/10.0
         page.center = CGPoint(x: carousel.center.x, y: pageCenterY)
+        bottomBgImageView.frame = CGRect(x: 0, y: carousel.frame.height - shadeHeight, width: carousel.frame.width, height: shadeHeight)
     }
 }
 
@@ -122,6 +144,7 @@ extension MGCarouselView {
     fileprivate func configureView() {
         addSubview(carousel)
         addSubview(page)
+        addSubview(bottomBgImageView)
     }
 
     @objc fileprivate func animationTimerDidFired(_ timer:Timer){
