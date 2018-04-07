@@ -77,6 +77,12 @@ open class MGCarouselView: UIView,MGTimerFetching {
         page.alpha = 0.7
         return page
     }()
+    
+    public lazy var bottomBgImageView: UIImageView = {
+        let imageView: UIImageView = UIImageView()
+        imageView.isUserInteractionEnabled = false
+        return imageView
+    }()
 
     //MARK: - 私有属性
     
@@ -91,12 +97,6 @@ open class MGCarouselView: UIView,MGTimerFetching {
         carousel.isPagingEnabled = true
         carousel.bounces = true;
         return carousel
-    }()
-    
-    fileprivate lazy var bottomBgImageView: UIImageView = {
-        let imageView: UIImageView = UIImageView()
-        imageView.isUserInteractionEnabled = false
-        return imageView
     }()
     
     fileprivate var carouseData:[Any] = []
@@ -143,8 +143,8 @@ extension MGCarouselView {
     
     fileprivate func configureView() {
         addSubview(carousel)
-        addSubview(page)
         addSubview(bottomBgImageView)
+        addSubview(page)
     }
 
     @objc fileprivate func animationTimerDidFired(_ timer:Timer){
